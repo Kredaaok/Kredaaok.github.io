@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tor rajdowy</title>
+    <style>* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #eaeaea;
+    }
+    
+    .track-container {
+        position: relative;
+        width: 2000px; 
+        height: 700px; 
+    }
+    
+    .track {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .car {
+        position: absolute;
+        width: 50px;
+        height: 30px;
+        background-color: rgb(255, 0, 0);
+        border-radius: 10px;
+        top: 100px; 
+        left: 50px; 
+        transform-origin: center;
+        animation: drive 60s infinite linear;
+    }
+    
+    
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #eaeaea;
+}
+
+.track-container {
+    position: relative;
+    width: 1660px; 
+    height: 800px; 
+}
+
+.track {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.car {
+    position: absolute;
+    width: 50px;
+    height: 30px;
+    background-color: red;
+    border-radius: 10px;
+    top: 100px;
+    left: 50px;
+    transform-origin: center;
+    animation: drive 10s infinite linear;
+}
+
+@keyframes drive {
+    0% {
+        top: 165px;
+        left: 70px;
+        transform: rotate(0deg); 
+    }
+    20% {
+        top: 165px;
+        left: 1540px;
+        transform: rotate(0deg); 
+    }
+    25% {
+        top: 165px;
+        left: 1540px;
+        transform: rotate(90deg); 
+    }
+    45% {
+        top: 640px;
+        left: 1540px;
+        transform: rotate(90deg); 
+    }
+    50% {
+        top: 640px;
+        left: 1540px;
+        transform: rotate(180deg); 
+    }
+    
+    70% {
+        top: 640px;
+        left: 70px;
+        transform: rotate(180deg); 
+    }
+    75% {
+        top: 640px;
+        left: 70px;
+        transform: rotate(270deg); 
+    }
+    95% {
+        top: 160px;
+        left: 70px;
+        transform: rotate(270deg); 
+    }
+    100% {
+        top: 160px;
+        left: 70px;
+        transform: rotate(360deg); /
+    }
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="track-container">
+        <img src="tor.png" alt="Tor rajdowy" class="track">
+        <img src="auto od gory.png" alt="Tor rajdowy" class="car">
+    </div>
+</body>
+</html>
